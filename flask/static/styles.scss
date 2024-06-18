@@ -1,0 +1,67 @@
+h1{
+    color:darkorange;
+    margin-left: 300px;
+}
+
+header {
+    color:darkorange;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    color:darkorange;
+}
+
+input.description-input {
+    width: calc(300% - 200px);  /* Adjust width specifically for the description input */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input.price-input {
+    width: calc(100% - 120px);  /* Adjust width specifically for the description input */
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input.name-input {
+    width: calc(150% - 120px);  /* Adjust width specifically for the description input */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input.category-input {
+    width: calc(150% - 120px);  /* Adjust width specifically for the description input */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input.instock-input {
+    width: calc(150% - 120px);  /* Adjust width specifically for the description input */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input.tags-input {
+    width: calc(150% - 120px);  /* Adjust width specifically for the description input */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+

@@ -1,0 +1,41 @@
+ {% extends 'base.html' %}
+ {% block head %}<title> SHOPIFY </title>{% endblock %}
+{% block body %}
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/posting">Posting</a></li>
+        </ul>
+    </nav>
+</header>
+</div>
+<h2> there are no items Upload</h2>
+<div class="container">
+    <h1 , style="color: darkorange;"> Items posted </h1>
+    <table>
+        {% for item in items %}
+        <tr>
+            <td>
+                <img src="{{url_for('display_image', filename=item['filename']) }}"
+            height="200" width="200" >
+            </td>
+            <td>
+                </br>
+                </br>
+                </br>
+                </br>
+                Name: {{item['name']}} </br>
+                Price: {{item['price']}} euros </br>
+                Category: {{item['category']}} </br>
+                inStock: {{item['instock']}} </br>
+                Tags: {{item['tags']}} </br>
+                Description: {{item['description']}}
+            </td>
+            
+        </tr>
+    {% endfor %}
+
+    </table>
+   </div>
+{% endblock %}

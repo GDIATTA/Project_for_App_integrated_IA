@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block head %}
+<h1 , style="color: darkorange;"> SHOPIFY</h1>
+{% endblock %}
+
+{% block body %}
+<h1> POSTING NEW Item </h1>
+    <div class="content">
+        <h2> There are no items </h2>
+        <form action="/posting/" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type=text name="Name" id="name" class="name-input"/></td> 
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type=text name="Price" id="price" class="price-input"/></td> 
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td><input type=text name="Category" id="category" class="category-input"/></td> 
+                </tr>
+                <tr>
+                    <td>inStock</td>
+                    <td><input type=text name="inStock" id="instock" class="instock-input"/></td> 
+                </tr>
+                <tr>
+                    <td>Tags</td>
+                    <td><input type=text name="Tags" id="tags" class="tags-input"/></td> 
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><input type=text name="Description" id="description" class="description-input" /></td> 
+                </tr>
+                <tr>
+                    <td>Upload</td>
+                    <td>
+                        <dl>
+                           <input type="file" name="file" class="form-control" autocomplete="off" required>
+                        </dl>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>                                                              </td>
+                    <td><input type=submit  value="Added a Item" id="Item"/></td> 
+                </tr>
+            </table>
+
+        </form>
+{% endblock %}
+
