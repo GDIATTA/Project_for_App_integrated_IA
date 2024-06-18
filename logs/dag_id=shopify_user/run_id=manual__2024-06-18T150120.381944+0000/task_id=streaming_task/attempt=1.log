@@ -1,0 +1,197 @@
+[2024-06-18T15:01:21.740+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-18T15:01:21.779+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopify_user.streaming_task manual__2024-06-18T15:01:20.381944+00:00 [queued]>
+[2024-06-18T15:01:21.798+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopify_user.streaming_task manual__2024-06-18T15:01:20.381944+00:00 [queued]>
+[2024-06-18T15:01:21.799+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-18T15:01:22.040+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): streaming_task> on 2024-06-18 15:01:20.381944+00:00
+[2024-06-18T15:01:22.047+0000] {standard_task_runner.py:63} INFO - Started process 29720 to run task
+[2024-06-18T15:01:22.051+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'shopify_user', 'streaming_task', 'manual__2024-06-18T15:01:20.381944+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/kafka_streams_shopify.py', '--cfg-path', '/tmp/tmpdsei91zs']
+[2024-06-18T15:01:22.054+0000] {standard_task_runner.py:91} INFO - Job 20: Subtask streaming_task
+[2024-06-18T15:01:22.077+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-18T15:01:22.128+0000] {task_command.py:426} INFO - Running <TaskInstance: shopify_user.streaming_task manual__2024-06-18T15:01:20.381944+00:00 [running]> on host 75e5c4deb481
+[2024-06-18T15:01:22.328+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gauss' AIRFLOW_CTX_DAG_ID='shopify_user' AIRFLOW_CTX_TASK_ID='streaming_task' AIRFLOW_CTX_EXECUTION_DATE='2024-06-18T15:01:20.381944+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-18T15:01:20.381944+00:00'
+[2024-06-18T15:01:22.332+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-18T15:01:22.501+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 704, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product1.png'}
+[2024-06-18T15:01:24.507+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 525, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:01:24.508+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:26.509+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 320, 'category': 'vetement printent', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product1.png'}
+[2024-06-18T15:01:26.510+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:28.510+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 741, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product5.gif'}
+[2024-06-18T15:01:28.511+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:30.512+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 311, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product1.png'}
+[2024-06-18T15:01:30.513+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:32.514+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 2, 'category': 'vetement printent', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:01:32.515+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:34.516+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 428, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product3.jpg'}
+[2024-06-18T15:01:34.517+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:36.519+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 96, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product5.gif'}
+[2024-06-18T15:01:36.521+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:38.521+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 233, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product1.png'}
+[2024-06-18T15:01:38.522+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:40.523+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 954, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:01:40.525+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:42.526+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 701, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:01:42.527+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:44.528+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 500, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product5.gif'}
+[2024-06-18T15:01:44.529+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:46.530+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 556, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:01:46.531+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:48.532+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 111, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:01:48.533+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:50.533+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 546, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product5.gif'}
+[2024-06-18T15:01:50.551+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:52.553+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 69, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product1.png'}
+[2024-06-18T15:01:52.554+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:54.555+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 186, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:01:54.556+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:56.557+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 872, 'category': 'vetement été', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product2.png'}
+[2024-06-18T15:01:56.558+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:01:58.559+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 219, 'category': 'vetement été', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:01:58.561+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:00.562+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 456, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:02:00.572+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:02.573+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 778, 'category': 'vetement été', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:02:02.574+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:04.575+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 858, 'category': 'vetement été', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product5.gif'}
+[2024-06-18T15:02:04.576+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:06.577+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 423, 'category': 'vetement été', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product1.png'}
+[2024-06-18T15:02:06.578+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:08.579+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 178, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product5.gif'}
+[2024-06-18T15:02:08.580+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:10.587+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 777, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product1.png'}
+[2024-06-18T15:02:10.589+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:12.596+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 241, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product2.png'}
+[2024-06-18T15:02:12.599+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:14.600+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 376, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:02:14.602+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:16.606+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 958, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product5.gif'}
+[2024-06-18T15:02:16.607+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:18.608+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 859, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product1.png'}
+[2024-06-18T15:02:18.609+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:20.609+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 585, 'category': 'vetement été', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product3.jpg'}
+[2024-06-18T15:02:20.610+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:22.611+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 102, 'category': 'vetement été', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:02:22.612+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:24.613+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 703, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:02:24.615+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:26.616+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 225, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:02:26.619+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:28.620+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 535, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product1.png'}
+[2024-06-18T15:02:28.622+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:30.625+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 487, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:02:30.627+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:32.628+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 936, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product2.png'}
+[2024-06-18T15:02:32.629+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:34.630+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 65, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product3.jpg'}
+[2024-06-18T15:02:34.631+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:36.632+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 787, 'category': 'vetement été', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product5.gif'}
+[2024-06-18T15:02:36.633+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:38.635+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 931, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product5.gif'}
+[2024-06-18T15:02:38.636+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:40.638+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 26, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product3.jpg'}
+[2024-06-18T15:02:40.641+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:42.642+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 77, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product1.png'}
+[2024-06-18T15:02:42.643+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:44.644+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 92, 'category': 'vetement été', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product2.png'}
+[2024-06-18T15:02:44.644+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:46.645+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 534, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product2.png'}
+[2024-06-18T15:02:46.647+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:48.648+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 84, 'category': 'vetement été', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product1.png'}
+[2024-06-18T15:02:48.648+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:50.649+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 149, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:02:50.656+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:52.660+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 421, 'category': 'vetement été', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:02:52.661+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:54.662+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 874, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product2.png'}
+[2024-06-18T15:02:54.663+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:56.665+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 318, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product1.png'}
+[2024-06-18T15:02:56.665+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:02:58.674+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 656, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product3.jpg'}
+[2024-06-18T15:02:58.676+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:00.677+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 163, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product2.png'}
+[2024-06-18T15:03:00.681+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:02.718+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 367, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product5.gif'}
+[2024-06-18T15:03:02.719+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:04.720+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 496, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:04.722+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:06.723+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 17, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:06.725+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:08.726+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 112, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:08.727+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:10.728+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 58, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product3.jpg'}
+[2024-06-18T15:03:10.729+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:12.730+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 396, 'category': 'vetement printent', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product3.jpg'}
+[2024-06-18T15:03:12.731+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:14.732+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 569, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:03:14.733+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:16.734+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 496, 'category': 'vetement printent', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:16.735+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:18.736+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 900, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:03:18.737+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:20.738+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 191, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product1.png'}
+[2024-06-18T15:03:20.739+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:22.740+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 163, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:22.740+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:24.741+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 757, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:24.742+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:26.743+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 851, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product2.png'}
+[2024-06-18T15:03:26.744+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:28.745+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 669, 'category': 'vetement été', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product3.jpg'}
+[2024-06-18T15:03:28.746+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:30.747+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 469, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product2.png'}
+[2024-06-18T15:03:30.747+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:32.748+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 955, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:32.749+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:34.750+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 89, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product5.gif'}
+[2024-06-18T15:03:34.751+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:36.752+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 301, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product2.png'}
+[2024-06-18T15:03:36.753+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:38.754+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 532, 'category': 'vetement été', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product3.jpg'}
+[2024-06-18T15:03:38.755+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:40.756+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 12, 'category': 'vetement printent', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product1.png'}
+[2024-06-18T15:03:40.758+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:42.758+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 102, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:42.759+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:44.760+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 139, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:44.762+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:46.762+0000] {logging_mixin.py:188} INFO - {'name': 'jupe', 'price': 748, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:46.766+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:48.767+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 291, 'category': 'vetement automne', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product4.jpeg'}
+[2024-06-18T15:03:48.768+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:50.769+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 623, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product5.gif'}
+[2024-06-18T15:03:50.770+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:52.772+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 874, 'category': 'vetement printent', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product5.gif'}
+[2024-06-18T15:03:52.776+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:54.783+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 281, 'category': 'vetement printent', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product2.png'}
+[2024-06-18T15:03:54.784+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:56.786+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 917, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'good for summer time', 'Filename': 'product5.gif'}
+[2024-06-18T15:03:56.787+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:03:58.789+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 659, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version1', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product5.gif'}
+[2024-06-18T15:03:58.789+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:00.790+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 856, 'category': 'vetement printent', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product3.jpg'}
+[2024-06-18T15:04:00.791+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:02.792+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 49, 'category': 'vetement été', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product3.jpg'}
+[2024-06-18T15:04:02.795+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:04.796+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 74, 'category': 'vetement été', 'instock': 'true', 'tags': 'version3', 'Descriiption': 'confortable', 'Filename': 'product2.png'}
+[2024-06-18T15:04:04.797+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:06.798+0000] {logging_mixin.py:188} INFO - {'name': 't-shirt', 'price': 75, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'confortable', 'Filename': 'product1.png'}
+[2024-06-18T15:04:06.799+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:08.801+0000] {logging_mixin.py:188} INFO - {'name': 'chaussures', 'price': 260, 'category': 'vetement été', 'instock': 'true', 'tags': 'version1', 'Descriiption': 'good for summer time', 'Filename': 'product2.png'}
+[2024-06-18T15:04:08.801+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:10.803+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 563, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product1.png'}
+[2024-06-18T15:04:10.805+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:12.806+0000] {logging_mixin.py:188} INFO - {'name': 'robe', 'price': 299, 'category': 'vetement hiver', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product2.png'}
+[2024-06-18T15:04:12.807+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:14.808+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 520, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version3', 'Descriiption': 'bon en hiverstylé', 'Filename': 'product1.png'}
+[2024-06-18T15:04:14.809+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:16.810+0000] {logging_mixin.py:188} INFO - {'name': 'short', 'price': 343, 'category': 'vetement hiver', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product2.png'}
+[2024-06-18T15:04:16.811+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:18.812+0000] {logging_mixin.py:188} INFO - {'name': 'chemise', 'price': 984, 'category': 'vetement été', 'instock': 'true', 'tags': 'version2', 'Descriiption': 'good for summer time', 'Filename': 'product3.jpg'}
+[2024-06-18T15:04:18.813+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:20.814+0000] {logging_mixin.py:188} INFO - {'name': 'pantalon', 'price': 308, 'category': 'vetement automne', 'instock': 'false', 'tags': 'version2', 'Descriiption': 'confortable', 'Filename': 'product5.gif'}
+[2024-06-18T15:04:20.815+0000] {logging_mixin.py:188} INFO - Message delivered to <built-in method topic of cimpl.Message object at 0x7fe0b464e840> [0]
+[2024-06-18T15:04:22.818+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-18T15:04:22.822+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-18T15:04:22.849+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=shopify_user, task_id=streaming_task, run_id=manual__2024-06-18T15:01:20.381944+00:00, execution_date=20240618T150120, start_date=20240618T150121, end_date=20240618T150422
+[2024-06-18T15:04:22.909+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-18T15:04:22.936+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-18T15:04:22.943+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
