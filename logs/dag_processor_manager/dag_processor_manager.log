@@ -6635,3 +6635,1216 @@ File Path                                                 PID  Runtime      # DA
 [2024-06-18T15:37:24.525+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
 [2024-06-18T15:37:24.522+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
 [2024-06-18T15:37:25.411+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2024-06-18T15:40:24.958+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-06-18T15:40:24.974+0000] {manager.py:471} INFO - Process each file at most once every 10 seconds
+[2024-06-18T15:40:24.984+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-06-18T15:40:24.993+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-18T15:40:26.191+0000] {manager.py:740} INFO - There are 14 files in /opt/airflow/dags
+[2024-06-18T15:40:26.657+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/create_dag_with_python_operator.py                             0           0
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               0           0
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           0           0
+/opt/airflow/dags/dag_with_air_poll.py                                           0           0
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               0           0
+/opt/airflow/dags/dag_with_cron_expression.py                                    0           0
+/opt/airflow/dags/dag_with_hooks_S3.py                                           0           0
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     0           0
+/opt/airflow/dags/dag_with_postgres_operator.py                                  0           0
+/opt/airflow/dags/dag_with_python_dependencies.py                                0           0
+/opt/airflow/dags/dag_with_taskflow_api.py                                       0           0
+/opt/airflow/dags/kafka_stream.py                                                0           0
+/opt/airflow/dags/kafka_streams_shopify.py                171  0.28s             0           0
+/opt/airflow/dags/our_first_dag.py                        174  0.22s             0           0
+================================================================================
+[2024-06-18T15:40:57.233+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py        330  0.69s             1           0  3.39s           2024-06-18T15:40:46
+/opt/airflow/dags/dag_for_project_weather_web_flask.py    333  0.63s             1           0  3.21s           2024-06-18T15:40:46
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.91s           2024-06-18T15:40:49
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.87s           2024-06-18T15:40:51
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.75s           2024-06-18T15:40:48
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.64s           2024-06-18T15:40:49
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.55s           2024-06-18T15:40:47
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.49s           2024-06-18T15:40:47
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.35s           2024-06-18T15:40:47
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.30s           2024-06-18T15:40:47
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.28s           2024-06-18T15:40:46
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.25s           2024-06-18T15:40:46
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.22s           2024-06-18T15:40:46
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.20s           2024-06-18T15:40:46
+================================================================================
+[2024-06-18T15:41:28.051+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  1.03s           2024-06-18T15:41:21
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.98s           2024-06-18T15:41:21
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.21s           2024-06-18T15:41:21
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.19s           2024-06-18T15:41:22
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.19s           2024-06-18T15:41:22
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.19s           2024-06-18T15:41:21
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.17s           2024-06-18T15:41:22
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.17s           2024-06-18T15:41:22
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.16s           2024-06-18T15:41:22
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.15s           2024-06-18T15:41:22
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.15s           2024-06-18T15:41:22
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.15s           2024-06-18T15:41:22
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:41:22
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T15:41:22
+================================================================================
+[2024-06-18T15:41:58.133+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  1.90s           2024-06-18T15:41:55
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  1.85s           2024-06-18T15:41:55
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.25s           2024-06-18T15:41:55
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.19s           2024-06-18T15:41:57
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.18s           2024-06-18T15:41:56
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.18s           2024-06-18T15:41:56
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.17s           2024-06-18T15:41:56
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.16s           2024-06-18T15:41:56
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.16s           2024-06-18T15:41:56
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.16s           2024-06-18T15:41:56
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.16s           2024-06-18T15:41:56
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.14s           2024-06-18T15:41:56
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T15:41:57
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T15:41:56
+================================================================================
+[2024-06-18T15:42:28.667+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.81s           2024-06-18T15:42:20
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.77s           2024-06-18T15:42:20
+/opt/airflow/dags/kafka_streams_shopify.py                906  0.03s             1           0  0.59s           2024-06-18T15:42:17
+/opt/airflow/dags/our_first_dag.py                        909  0.01s             1           0  0.54s           2024-06-18T15:42:17
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.21s           2024-06-18T15:42:20
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.19s           2024-06-18T15:42:21
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.17s           2024-06-18T15:42:17
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.17s           2024-06-18T15:42:20
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.16s           2024-06-18T15:42:21
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T15:42:21
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:42:21
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T15:42:21
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T15:42:21
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:42:21
+================================================================================
+[2024-06-18T15:42:59.256+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.77s           2024-06-18T15:42:53
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.74s           2024-06-18T15:42:53
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.42s           2024-06-18T15:42:54
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.30s           2024-06-18T15:42:54
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.20s           2024-06-18T15:42:50
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.18s           2024-06-18T15:42:53
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.17s           2024-06-18T15:42:53
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.15s           2024-06-18T15:42:53
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.15s           2024-06-18T15:42:50
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.15s           2024-06-18T15:42:53
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T15:42:53
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.14s           2024-06-18T15:42:53
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:42:53
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:42:50
+================================================================================
+[2024-06-18T15:43:29.637+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.70s           2024-06-18T15:43:26
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.68s           2024-06-18T15:43:26
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.23s           2024-06-18T15:43:21
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.20s           2024-06-18T15:43:26
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.19s           2024-06-18T15:43:27
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.18s           2024-06-18T15:43:21
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.18s           2024-06-18T15:43:27
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.17s           2024-06-18T15:43:27
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.16s           2024-06-18T15:43:26
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T15:43:27
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:43:27
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:43:27
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:43:22
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:43:27
+================================================================================
+[2024-06-18T15:43:59.665+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.41s           2024-06-18T15:43:59
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.39s           2024-06-18T15:43:59
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.26s           2024-06-18T15:43:53
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.22s           2024-06-18T15:43:54
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.21s           2024-06-18T15:43:49
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.18s           2024-06-18T15:43:49
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.17s           2024-06-18T15:43:49
+/opt/airflow/dags/dag_with_catchup_and_backfill.py       1515  0.13s             1           0  0.16s           2024-06-18T15:43:48
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.15s           2024-06-18T15:43:53
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T15:43:49
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:43:59
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:43:49
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:43:49
+/opt/airflow/dags/dag_with_cron_expression.py            1520  0.01s             1           0  0.13s           2024-06-18T15:43:48
+================================================================================
+[2024-06-18T15:44:29.742+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.44s           2024-06-18T15:44:20
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.37s           2024-06-18T15:44:20
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.21s           2024-06-18T15:44:25
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.15s           2024-06-18T15:44:20
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:44:21
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.14s           2024-06-18T15:44:25
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T15:44:21
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.14s           2024-06-18T15:44:21
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:44:20
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:44:25
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T15:44:21
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:44:20
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:44:21
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:44:21
+================================================================================
+[2024-06-18T15:45:00.202+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.47s           2024-06-18T15:44:52
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.40s           2024-06-18T15:44:52
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T15:44:57
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.17s           2024-06-18T15:44:52
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.16s           2024-06-18T15:44:52
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:44:52
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.14s           2024-06-18T15:44:52
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T15:44:57
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:44:52
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:44:52
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:44:52
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:44:57
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:44:52
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T15:44:52
+================================================================================
+[2024-06-18T15:45:25.372+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-18T15:45:25.627+0000] {manager.py:740} INFO - There are 14 files in /opt/airflow/dags
+[2024-06-18T15:45:30.296+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.74s           2024-06-18T15:45:26
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.52s           2024-06-18T15:45:26
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.20s           2024-06-18T15:45:29
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.18s           2024-06-18T15:45:27
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.15s           2024-06-18T15:45:26
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.15s           2024-06-18T15:45:26
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.14s           2024-06-18T15:45:29
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.13s           2024-06-18T15:45:26
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:45:26
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:45:29
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:45:26
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:45:26
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:45:26
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:45:26
+================================================================================
+[2024-06-18T15:46:00.600+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.83s           2024-06-18T15:45:58
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.72s           2024-06-18T15:45:58
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.21s           2024-06-18T15:45:50
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.17s           2024-06-18T15:45:51
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.17s           2024-06-18T15:45:59
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.16s           2024-06-18T15:45:59
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.16s           2024-06-18T15:45:58
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.16s           2024-06-18T15:45:59
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.15s           2024-06-18T15:45:59
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T15:45:59
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.15s           2024-06-18T15:45:59
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.15s           2024-06-18T15:45:59
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.15s           2024-06-18T15:45:59
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.14s           2024-06-18T15:45:50
+================================================================================
+[2024-06-18T15:46:31.022+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.58s           2024-06-18T15:46:31
+/opt/airflow/dags/dag_for_project_weather_web_flask.py   2514  0.58s             1           0  0.48s           2024-06-18T15:46:20
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.25s           2024-06-18T15:46:23
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.19s           2024-06-18T15:46:23
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.19s           2024-06-18T15:46:21
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.16s           2024-06-18T15:46:23
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.16s           2024-06-18T15:46:20
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T15:46:20
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.15s           2024-06-18T15:46:20
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.15s           2024-06-18T15:46:20
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.15s           2024-06-18T15:46:20
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.15s           2024-06-18T15:46:20
+/opt/airflow/dags/dag_with_air_poll.py                   2521  0.00s             1           0  0.15s           2024-06-18T15:46:20
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.14s           2024-06-18T15:46:20
+================================================================================
+[2024-06-18T15:47:01.501+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.45s           2024-06-18T15:46:52
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.44s           2024-06-18T15:46:52
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.19s           2024-06-18T15:46:55
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.16s           2024-06-18T15:46:53
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:46:52
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.14s           2024-06-18T15:46:55
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T15:46:52
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T15:46:53
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:46:52
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:46:52
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:46:52
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:46:52
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:46:52
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.11s           2024-06-18T15:46:55
+================================================================================
+[2024-06-18T15:47:31.771+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.37s           2024-06-18T15:47:23
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.35s           2024-06-18T15:47:23
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T15:47:26
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:47:24
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T15:47:24
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.15s           2024-06-18T15:47:24
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:47:26
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:47:24
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T15:47:24
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:47:24
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:47:23
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T15:47:26
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T15:47:24
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T15:47:23
+================================================================================
+[2024-06-18T15:48:02.235+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.43s           2024-06-18T15:47:55
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.42s           2024-06-18T15:47:55
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.16s           2024-06-18T15:47:58
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.16s           2024-06-18T15:47:56
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T15:47:55
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:47:55
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T15:47:55
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.13s           2024-06-18T15:47:55
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:47:55
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:47:58
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:47:58
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:47:55
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:47:55
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:47:55
+================================================================================
+[2024-06-18T15:48:33.152+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.36s           2024-06-18T15:48:26
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.35s           2024-06-18T15:48:26
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.16s           2024-06-18T15:48:30
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:48:27
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.14s           2024-06-18T15:48:27
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.13s           2024-06-18T15:48:27
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:48:27
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T15:48:27
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T15:48:27
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:48:27
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T15:48:27
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:48:27
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:48:30
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.11s           2024-06-18T15:48:30
+================================================================================
+[2024-06-18T15:49:03.701+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.38s           2024-06-18T15:48:58
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.36s           2024-06-18T15:48:58
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.17s           2024-06-18T15:48:58
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T15:49:01
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.14s           2024-06-18T15:48:59
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:49:01
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:49:01
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:48:59
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:48:58
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:48:59
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.12s           2024-06-18T15:48:58
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.11s           2024-06-18T15:48:59
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.11s           2024-06-18T15:48:59
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.11s           2024-06-18T15:48:59
+================================================================================
+[2024-06-18T15:49:34.406+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.39s           2024-06-18T15:49:30
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.36s           2024-06-18T15:49:30
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.18s           2024-06-18T15:49:33
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:49:31
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.15s           2024-06-18T15:49:30
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:49:30
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:49:33
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T15:49:31
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:49:30
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:49:30
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:49:33
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:49:30
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:49:30
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.11s           2024-06-18T15:49:30
+================================================================================
+[2024-06-18T15:50:04.739+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.39s           2024-06-18T15:50:02
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.37s           2024-06-18T15:50:02
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.18s           2024-06-18T15:50:02
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.17s           2024-06-18T15:50:02
+/opt/airflow/dags/kafka_streams_shopify.py               4008  0.02s             1           0  0.16s           2024-06-18T15:49:54
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.15s           2024-06-18T15:50:02
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:50:02
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:50:02
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:50:02
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:50:02
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:50:02
+/opt/airflow/dags/our_first_dag.py                       4011  0.00s             1           0  0.12s           2024-06-18T15:49:54
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.11s           2024-06-18T15:50:02
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.11s           2024-06-18T15:49:54
+================================================================================
+[2024-06-18T15:50:25.861+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-18T15:50:26.121+0000] {manager.py:740} INFO - There are 14 files in /opt/airflow/dags
+[2024-06-18T15:50:35.485+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.40s           2024-06-18T15:50:33
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.36s           2024-06-18T15:50:33
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.18s           2024-06-18T15:50:26
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:50:34
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:50:34
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T15:50:34
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:50:34
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:50:26
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:50:34
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:50:34
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:50:34
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:50:26
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T15:50:33
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.12s           2024-06-18T15:50:34
+================================================================================
+[2024-06-18T15:51:05.755+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py   4386  0.45s             1           0  0.46s           2024-06-18T15:50:55
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.45s           2024-06-18T15:51:05
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T15:50:58
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:50:55
+/opt/airflow/dags/dag_with_air_poll.py                   4393  0.00s             1           0  0.13s           2024-06-18T15:50:55
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T15:50:55
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:50:55
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:50:55
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:50:55
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:50:58
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:50:58
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:50:55
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:50:55
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.11s           2024-06-18T15:50:55
+================================================================================
+[2024-06-18T15:51:35.830+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.36s           2024-06-18T15:51:26
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.35s           2024-06-18T15:51:26
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.20s           2024-06-18T15:51:29
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.15s           2024-06-18T15:51:27
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.15s           2024-06-18T15:51:27
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.14s           2024-06-18T15:51:29
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.14s           2024-06-18T15:51:27
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:51:27
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.12s           2024-06-18T15:51:26
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T15:51:26
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:51:27
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:51:29
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:51:27
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.11s           2024-06-18T15:51:27
+================================================================================
+[2024-06-18T15:52:06.264+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.38s           2024-06-18T15:51:58
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.36s           2024-06-18T15:51:58
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.15s           2024-06-18T15:52:01
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:51:59
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.14s           2024-06-18T15:52:01
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T15:51:58
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:51:58
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:51:58
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:51:58
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T15:51:58
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.11s           2024-06-18T15:52:01
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.11s           2024-06-18T15:51:58
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.11s           2024-06-18T15:51:58
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.11s           2024-06-18T15:51:58
+================================================================================
+[2024-06-18T15:52:36.633+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.38s           2024-06-18T15:52:29
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.37s           2024-06-18T15:52:29
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.25s           2024-06-18T15:52:33
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.17s           2024-06-18T15:52:30
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.16s           2024-06-18T15:52:29
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.15s           2024-06-18T15:52:29
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:52:30
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.15s           2024-06-18T15:52:29
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.14s           2024-06-18T15:52:30
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T15:52:30
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:52:30
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:52:32
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.12s           2024-06-18T15:52:29
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.11s           2024-06-18T15:52:32
+================================================================================
+[2024-06-18T15:53:06.724+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.51s           2024-06-18T15:53:01
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.49s           2024-06-18T15:53:01
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.19s           2024-06-18T15:53:05
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.14s           2024-06-18T15:53:02
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.14s           2024-06-18T15:53:02
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.14s           2024-06-18T15:53:02
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:53:01
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T15:53:02
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:53:01
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:53:02
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:53:02
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:53:04
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:53:04
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:53:02
+================================================================================
+[2024-06-18T15:53:37.025+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.36s           2024-06-18T15:53:33
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.36s           2024-06-18T15:53:33
+/opt/airflow/dags/kafka_streams_shopify.py               5466  0.01s             1           0  0.17s           2024-06-18T15:53:26
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:53:33
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T15:53:33
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.14s           2024-06-18T15:53:36
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.14s           2024-06-18T15:53:33
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.14s           2024-06-18T15:53:36
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T15:53:33
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:53:33
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T15:53:33
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T15:53:33
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:53:33
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:53:33
+================================================================================
+[2024-06-18T15:54:07.659+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.47s           2024-06-18T15:54:04
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.41s           2024-06-18T15:54:04
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.18s           2024-06-18T15:53:58
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.18s           2024-06-18T15:54:05
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.17s           2024-06-18T15:54:05
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:54:05
+/opt/airflow/dags/create_dag_with_python_operator.py     5675  0.00s             1           0  0.14s           2024-06-18T15:53:57
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T15:54:05
+/opt/airflow/dags/our_first_dag.py                       5672  0.04s             1           0  0.14s           2024-06-18T15:53:57
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T15:54:05
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.14s           2024-06-18T15:54:05
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:54:05
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.13s           2024-06-18T15:54:04
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:54:05
+================================================================================
+[2024-06-18T15:54:38.265+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.35s           2024-06-18T15:54:36
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.34s           2024-06-18T15:54:36
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.18s           2024-06-18T15:54:37
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.16s           2024-06-18T15:54:29
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.16s           2024-06-18T15:54:37
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.14s           2024-06-18T15:54:37
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:54:36
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T15:54:36
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:54:28
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:54:28
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:54:36
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T15:54:36
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.11s           2024-06-18T15:54:36
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.11s           2024-06-18T15:54:36
+================================================================================
+[2024-06-18T15:55:08.753+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.95s           2024-06-18T15:55:08
+/opt/airflow/dags/dag_for_project_weather_web_flask.py   6050  0.95s             1           0  0.45s           2024-06-18T15:54:57
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.23s           2024-06-18T15:55:01
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.22s           2024-06-18T15:55:00
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.18s           2024-06-18T15:54:58
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.17s           2024-06-18T15:55:00
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.16s           2024-06-18T15:54:57
+/opt/airflow/dags/dag_with_air_poll.py                   6057  0.00s             1           0  0.14s           2024-06-18T15:54:57
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.14s           2024-06-18T15:54:58
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T15:54:58
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:54:57
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:54:58
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:54:58
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:54:58
+================================================================================
+[2024-06-18T15:55:26.484+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-18T15:55:26.682+0000] {manager.py:740} INFO - There are 14 files in /opt/airflow/dags
+[2024-06-18T15:55:39.109+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.43s           2024-06-18T15:55:30
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.38s           2024-06-18T15:55:30
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T15:55:33
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:55:30
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T15:55:30
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:55:30
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:55:30
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:55:30
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:55:30
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:55:30
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:55:30
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:55:31
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T15:55:31
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.11s           2024-06-18T15:55:30
+================================================================================
+[2024-06-18T15:56:09.823+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.49s           2024-06-18T15:56:01
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.42s           2024-06-18T15:56:01
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.20s           2024-06-18T15:56:02
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.18s           2024-06-18T15:56:02
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.15s           2024-06-18T15:56:04
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.15s           2024-06-18T15:56:01
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:56:02
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.14s           2024-06-18T15:56:02
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T15:56:02
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.14s           2024-06-18T15:56:03
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:56:01
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T15:56:03
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:56:02
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:56:02
+================================================================================
+[2024-06-18T15:56:40.404+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.55s           2024-06-18T15:56:33
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.53s           2024-06-18T15:56:33
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.19s           2024-06-18T15:56:36
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:56:34
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:56:33
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:56:33
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T15:56:35
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:56:33
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:56:35
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:56:33
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:56:33
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.12s           2024-06-18T15:56:33
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:56:34
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.11s           2024-06-18T15:56:34
+================================================================================
+[2024-06-18T15:57:11.001+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.52s           2024-06-18T15:57:04
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.44s           2024-06-18T15:57:05
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.20s           2024-06-18T15:57:05
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.18s           2024-06-18T15:57:04
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.15s           2024-06-18T15:57:06
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.15s           2024-06-18T15:57:06
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.15s           2024-06-18T15:57:08
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T15:57:04
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.14s           2024-06-18T15:57:05
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.14s           2024-06-18T15:57:05
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T15:57:05
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:57:05
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:57:05
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.11s           2024-06-18T15:57:05
+================================================================================
+[2024-06-18T15:57:41.752+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.49s           2024-06-18T15:57:37
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.37s           2024-06-18T15:57:36
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T15:57:37
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.15s           2024-06-18T15:57:39
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T15:57:37
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.14s           2024-06-18T15:57:37
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:57:37
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:57:36
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:57:36
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:57:36
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T15:57:38
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:57:38
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T15:57:37
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T15:57:36
+================================================================================
+[2024-06-18T15:58:12.013+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.46s           2024-06-18T15:58:08
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.41s           2024-06-18T15:58:08
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.17s           2024-06-18T15:58:08
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.16s           2024-06-18T15:58:08
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.16s           2024-06-18T15:58:08
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.16s           2024-06-18T15:58:11
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:58:07
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.14s           2024-06-18T15:58:09
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T15:58:09
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T15:58:08
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:58:08
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T15:58:08
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:58:08
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T15:58:08
+================================================================================
+[2024-06-18T15:58:42.681+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.45s           2024-06-18T15:58:40
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.35s           2024-06-18T15:58:40
+/opt/airflow/dags/kafka_streams_shopify.py               7554  0.02s             1           0  0.16s           2024-06-18T15:58:32
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.16s           2024-06-18T15:58:40
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.15s           2024-06-18T15:58:39
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.15s           2024-06-18T15:58:40
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.15s           2024-06-18T15:58:39
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T15:58:41
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:58:39
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T15:58:41
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T15:58:39
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:58:39
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T15:58:40
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:58:39
+================================================================================
+[2024-06-18T15:59:13.369+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.46s           2024-06-18T15:59:11
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.43s           2024-06-18T15:59:12
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.18s           2024-06-18T15:59:12
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.16s           2024-06-18T15:59:03
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T15:59:11
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T15:59:12
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:59:11
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:59:11
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T15:59:11
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T15:59:11
+/opt/airflow/dags/create_dag_with_python_operator.py     7763  0.00s             1           0  0.13s           2024-06-18T15:59:02
+/opt/airflow/dags/our_first_dag.py                       7760  0.02s             1           0  0.12s           2024-06-18T15:59:02
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:59:11
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.11s           2024-06-18T15:59:11
+================================================================================
+[2024-06-18T15:59:43.449+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  1.14s           2024-06-18T15:59:34
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.42s           2024-06-18T15:59:34
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.36s           2024-06-18T15:59:34
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.19s           2024-06-18T15:59:35
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.17s           2024-06-18T15:59:34
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.16s           2024-06-18T15:59:43
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.15s           2024-06-18T15:59:34
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.15s           2024-06-18T15:59:34
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T15:59:43
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T15:59:34
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T15:59:43
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T15:59:34
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T15:59:43
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T15:59:43
+================================================================================
+[2024-06-18T16:00:13.489+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.52s           2024-06-18T16:00:06
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.36s           2024-06-18T16:00:07
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.25s           2024-06-18T16:00:06
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.21s           2024-06-18T16:00:04
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.19s           2024-06-18T16:00:04
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T16:00:07
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.16s           2024-06-18T16:00:05
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T16:00:04
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T16:00:04
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T16:00:05
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T16:00:05
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T16:00:05
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T16:00:05
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T16:00:04
+================================================================================
+[2024-06-18T16:00:26.485+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-18T16:00:26.749+0000] {manager.py:740} INFO - There are 14 files in /opt/airflow/dags
+[2024-06-18T16:00:43.537+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.48s           2024-06-18T16:00:39
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.39s           2024-06-18T16:00:37
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.20s           2024-06-18T16:00:37
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.18s           2024-06-18T16:00:39
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.15s           2024-06-18T16:00:35
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T16:00:35
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.14s           2024-06-18T16:00:37
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.14s           2024-06-18T16:00:37
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.13s           2024-06-18T16:00:37
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T16:00:36
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T16:00:36
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T16:00:36
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T16:00:37
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.11s           2024-06-18T16:00:37
+================================================================================
+[2024-06-18T16:01:13.902+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.39s           2024-06-18T16:01:12
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.38s           2024-06-18T16:01:10
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.19s           2024-06-18T16:01:10
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.17s           2024-06-18T16:01:08
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.17s           2024-06-18T16:01:07
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.17s           2024-06-18T16:01:07
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.14s           2024-06-18T16:01:08
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T16:01:08
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T16:01:08
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T16:01:07
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.13s           2024-06-18T16:01:07
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T16:01:08
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T16:01:08
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.11s           2024-06-18T16:01:07
+================================================================================
+[2024-06-18T16:01:43.965+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.40s           2024-06-18T16:01:34
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.39s           2024-06-18T16:01:42
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T16:01:41
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.16s           2024-06-18T16:01:40
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.15s           2024-06-18T16:01:39
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T16:01:38
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.14s           2024-06-18T16:01:40
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T16:01:38
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T16:01:40
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T16:01:39
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T16:01:40
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T16:01:40
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T16:01:39
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T16:01:40
+================================================================================
+[2024-06-18T16:02:14.056+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py       8987  0.00s             1           0  0.59s           2024-06-18T16:02:03
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.35s           2024-06-18T16:02:06
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.19s           2024-06-18T16:02:11
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.18s           2024-06-18T16:02:10
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.18s           2024-06-18T16:02:11
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.17s           2024-06-18T16:02:10
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T16:02:13
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.16s           2024-06-18T16:02:11
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T16:02:11
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.14s           2024-06-18T16:02:11
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T16:02:11
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T16:02:10
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T16:02:10
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T16:02:10
+================================================================================
+[2024-06-18T16:02:44.531+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.56s           2024-06-18T16:02:35
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.43s           2024-06-18T16:02:38
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.16s           2024-06-18T16:02:43
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T16:02:42
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.15s           2024-06-18T16:02:42
+/opt/airflow/dags/kafka_streams_shopify.py               9198  0.00s             1           0  0.15s           2024-06-18T16:02:34
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T16:02:41
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T16:02:41
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.14s           2024-06-18T16:02:42
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T16:02:43
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T16:02:43
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T16:02:43
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T16:02:43
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T16:02:43
+================================================================================
+[2024-06-18T16:03:14.694+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.49s           2024-06-18T16:03:09
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.42s           2024-06-18T16:03:07
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T16:03:05
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T16:03:13
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.14s           2024-06-18T16:03:13
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T16:03:04
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.13s           2024-06-18T16:03:04
+/opt/airflow/dags/create_dag_with_python_operator.py     9387  0.00s             1           0  0.12s           2024-06-18T16:03:04
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T16:03:13
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T16:03:04
+/opt/airflow/dags/our_first_dag.py                       9384  0.01s             1           0  0.12s           2024-06-18T16:03:04
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T16:03:13
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.12s           2024-06-18T16:03:13
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.11s           2024-06-18T16:03:04
+================================================================================
+[2024-06-18T16:03:44.749+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.73s           2024-06-18T16:03:39
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.35s           2024-06-18T16:03:41
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.23s           2024-06-18T16:03:37
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.19s           2024-06-18T16:03:36
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.17s           2024-06-18T16:03:36
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.17s           2024-06-18T16:03:36
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.17s           2024-06-18T16:03:36
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.16s           2024-06-18T16:03:35
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.15s           2024-06-18T16:03:35
+/opt/airflow/dags/dag_with_catchup_and_backfill.py       9578  0.01s             1           0  0.14s           2024-06-18T16:03:34
+/opt/airflow/dags/dag_with_air_poll.py                   9575  0.02s             1           0  0.13s           2024-06-18T16:03:34
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T16:03:34
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.11s           2024-06-18T16:03:34
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.11s           2024-06-18T16:03:34
+================================================================================
+[2024-06-18T16:04:15.178+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.43s           2024-06-18T16:04:13
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.40s           2024-06-18T16:04:12
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.17s           2024-06-18T16:04:08
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.14s           2024-06-18T16:04:08
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.13s           2024-06-18T16:04:08
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T16:04:05
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T16:04:05
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T16:04:07
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T16:04:05
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.12s           2024-06-18T16:04:07
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T16:04:07
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.11s           2024-06-18T16:04:07
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.11s           2024-06-18T16:04:05
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.11s           2024-06-18T16:04:06
+================================================================================
+[2024-06-18T16:04:45.904+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py       9995  0.02s             1           0  0.95s           2024-06-18T16:04:35
+/opt/airflow/dags/dag_for_project_weather_web_flask.py   9998  0.01s             1           0  0.91s           2024-06-18T16:04:35
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.18s           2024-06-18T16:04:40
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.15s           2024-06-18T16:04:36
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.15s           2024-06-18T16:04:36
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.14s           2024-06-18T16:04:40
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T16:04:38
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T16:04:39
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T16:04:39
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.13s           2024-06-18T16:04:37
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T16:04:39
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T16:04:39
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.12s           2024-06-18T16:04:37
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T16:04:39
+================================================================================
+[2024-06-18T16:05:16.781+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  1.67s           2024-06-18T16:05:09
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  1.63s           2024-06-18T16:05:09
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.27s           2024-06-18T16:05:12
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.23s           2024-06-18T16:05:12
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.15s           2024-06-18T16:05:09
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T16:05:10
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T16:05:09
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.14s           2024-06-18T16:05:11
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.13s           2024-06-18T16:05:11
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T16:05:11
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T16:05:09
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T16:05:11
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T16:05:10
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.11s           2024-06-18T16:05:11
+================================================================================
+[2024-06-18T16:05:26.754+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-18T16:05:27.001+0000] {manager.py:740} INFO - There are 14 files in /opt/airflow/dags
+[2024-06-18T16:05:47.659+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  0.86s           2024-06-18T16:05:45
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.60s           2024-06-18T16:05:46
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.18s           2024-06-18T16:05:45
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.16s           2024-06-18T16:05:45
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.15s           2024-06-18T16:05:46
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.15s           2024-06-18T16:05:42
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.15s           2024-06-18T16:05:42
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T16:05:46
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.14s           2024-06-18T16:05:46
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.14s           2024-06-18T16:05:46
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.12s           2024-06-18T16:05:46
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T16:05:46
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.12s           2024-06-18T16:05:46
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.11s           2024-06-18T16:05:44
+================================================================================
+[2024-06-18T16:06:18.265+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  1.81s           2024-06-18T16:06:09
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  1.35s           2024-06-18T16:06:08
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.36s           2024-06-18T16:06:17
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.31s           2024-06-18T16:06:09
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.21s           2024-06-18T16:06:09
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.15s           2024-06-18T16:06:09
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.15s           2024-06-18T16:06:09
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.15s           2024-06-18T16:06:09
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.14s           2024-06-18T16:06:09
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T16:06:17
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T16:06:09
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.13s           2024-06-18T16:06:13
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T16:06:13
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.12s           2024-06-18T16:06:16
+================================================================================
+[2024-06-18T16:06:48.700+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  1.60s           2024-06-18T16:06:46
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  1.34s           2024-06-18T16:06:46
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.32s           2024-06-18T16:06:47
+/opt/airflow/dags/kafka_streams_shopify.py              10802  0.02s             1           0  0.20s           2024-06-18T16:06:38
+/opt/airflow/dags/dag_with_catchup_and_backfill.py      10805  0.00s             1           0  0.14s           2024-06-18T16:06:38
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.14s           2024-06-18T16:06:47
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.13s           2024-06-18T16:06:40
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.13s           2024-06-18T16:06:47
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.13s           2024-06-18T16:06:47
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.12s           2024-06-18T16:06:46
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.12s           2024-06-18T16:06:47
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.12s           2024-06-18T16:06:47
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.11s           2024-06-18T16:06:47
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.11s           2024-06-18T16:06:47
+================================================================================
+[2024-06-18T16:07:19.493+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  2.09s           2024-06-18T16:07:10
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  2.04s           2024-06-18T16:07:10
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.55s           2024-06-18T16:07:11
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.32s           2024-06-18T16:07:12
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.28s           2024-06-18T16:07:12
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.26s           2024-06-18T16:07:11
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.23s           2024-06-18T16:07:12
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.20s           2024-06-18T16:07:11
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.18s           2024-06-18T16:07:18
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.17s           2024-06-18T16:07:11
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.17s           2024-06-18T16:07:11
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.16s           2024-06-18T16:07:11
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.14s           2024-06-18T16:07:11
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.13s           2024-06-18T16:07:11
+================================================================================
+[2024-06-18T16:07:49.705+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  2.03s           2024-06-18T16:07:48
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  1.99s           2024-06-18T16:07:48
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.33s           2024-06-18T16:07:49
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.33s           2024-06-18T16:07:49
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.32s           2024-06-18T16:07:49
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.32s           2024-06-18T16:07:42
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.23s           2024-06-18T16:07:44
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.21s           2024-06-18T16:07:37
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.15s           2024-06-18T16:07:37
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.15s           2024-06-18T16:07:37
+/opt/airflow/dags/our_first_dag.py                      11157  0.01s             1           0  0.14s           2024-06-18T16:07:39
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.14s           2024-06-18T16:07:37
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.14s           2024-06-18T16:07:42
+/opt/airflow/dags/dag_with_postgres_hooks.py            11150  0.32s             1           0  0.13s           2024-06-18T16:07:36
+================================================================================
+[2024-06-18T16:08:20.456+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  2.29s           2024-06-18T16:08:14
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  0.94s           2024-06-18T16:08:14
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.54s           2024-06-18T16:08:15
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.22s           2024-06-18T16:08:12
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.20s           2024-06-18T16:08:13
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.18s           2024-06-18T16:08:16
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.18s           2024-06-18T16:08:15
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.18s           2024-06-18T16:08:14
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.17s           2024-06-18T16:08:14
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.17s           2024-06-18T16:08:14
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.16s           2024-06-18T16:08:15
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.16s           2024-06-18T16:08:14
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.16s           2024-06-18T16:08:15
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T16:08:14
+================================================================================
+[2024-06-18T16:08:50.547+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_elt_from_api_into_postgre.py                               1           0  3.13s           2024-06-18T16:08:41
+/opt/airflow/dags/dag_for_project_weather_web_flask.py                           1           0  2.49s           2024-06-18T16:08:40
+/opt/airflow/dags/kafka_streams_shopify.py                                       1           0  0.56s           2024-06-18T16:08:41
+/opt/airflow/dags/kafka_stream.py                                                1           0  0.21s           2024-06-18T16:08:42
+/opt/airflow/dags/dag_with_python_dependencies.py                                1           0  0.19s           2024-06-18T16:08:41
+/opt/airflow/dags/dag_with_air_poll.py                                           1           0  0.18s           2024-06-18T16:08:41
+/opt/airflow/dags/dag_with_postgres_operator.py                                  1           0  0.17s           2024-06-18T16:08:41
+/opt/airflow/dags/create_dag_with_python_operator.py                             1           0  0.17s           2024-06-18T16:08:48
+/opt/airflow/dags/our_first_dag.py                                               1           0  0.17s           2024-06-18T16:08:44
+/opt/airflow/dags/dag_with_taskflow_api.py                                       1           0  0.16s           2024-06-18T16:08:42
+/opt/airflow/dags/dag_with_cron_expression.py                                    1           0  0.16s           2024-06-18T16:08:41
+/opt/airflow/dags/dag_with_postgres_hooks.py                                     1           0  0.15s           2024-06-18T16:08:41
+/opt/airflow/dags/dag_with_catchup_and_backfill.py                               1           0  0.14s           2024-06-18T16:08:43
+/opt/airflow/dags/dag_with_hooks_S3.py                                           1           0  0.14s           2024-06-18T16:08:41
+================================================================================
+[2024-06-18T16:09:14.397+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15

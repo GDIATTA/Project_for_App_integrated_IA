@@ -7240,3 +7240,73 @@
 [2024-06-18T16:06:58.555+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:06:58.555+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T16:06:58.599+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:06:58.599+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
 [2024-06-18T16:06:58.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 1.347 seconds
+[2024-06-18T16:07:08.851+0000] {processor.py:161} INFO - Started process (PID=10897) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:08.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:07:08.854+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:08.854+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:10.687+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:10.789+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:10.789+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:07:10.818+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:10.818+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:07:10.848+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 2.002 seconds
+[2024-06-18T16:07:22.711+0000] {processor.py:161} INFO - Started process (PID=10980) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:22.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:07:22.726+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:22.726+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:23.887+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:24.065+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:24.064+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:07:24.100+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:24.100+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:07:24.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 1.450 seconds
+[2024-06-18T16:07:34.381+0000] {processor.py:161} INFO - Started process (PID=11048) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:34.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:07:34.385+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:34.384+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:36.363+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:36.464+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:36.463+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:07:36.492+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:36.491+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:07:36.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 2.155 seconds
+[2024-06-18T16:07:46.967+0000] {processor.py:161} INFO - Started process (PID=11128) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:46.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:07:46.972+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:46.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:48.680+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:48.763+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:48.762+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:07:48.798+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:48.797+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:07:48.889+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 1.931 seconds
+[2024-06-18T16:07:59.227+0000] {processor.py:161} INFO - Started process (PID=11200) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:07:59.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:07:59.234+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:07:59.234+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:01.431+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:02.141+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:02.141+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:08:02.607+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:02.606+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:08:02.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 3.458 seconds
+[2024-06-18T16:08:13.338+0000] {processor.py:161} INFO - Started process (PID=11283) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:13.339+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:08:13.342+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:13.342+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:14.150+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:14.179+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:14.178+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:08:14.200+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:14.200+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:08:14.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 0.900 seconds
+[2024-06-18T16:08:24.810+0000] {processor.py:161} INFO - Started process (PID=11354) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:24.812+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:08:24.816+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:24.815+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:27.000+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:27.167+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:27.166+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:08:27.264+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:27.264+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:08:27.294+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 2.491 seconds
+[2024-06-18T16:08:38.376+0000] {processor.py:161} INFO - Started process (PID=11431) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:38.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:08:38.380+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:38.379+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:40.502+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:40.733+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:40.732+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:08:40.768+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:40.768+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:08:40.825+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 2.457 seconds
+[2024-06-18T16:08:51.697+0000] {processor.py:161} INFO - Started process (PID=11503) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:51.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:08:51.700+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:51.700+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:53.809+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:08:54.059+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:54.058+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:08:54.142+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:08:54.141+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:08:54.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 2.493 seconds
+[2024-06-18T16:09:04.419+0000] {processor.py:161} INFO - Started process (PID=11575) to work on /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:09:04.421+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_for_project_weather_web_flask.py for tasks to queue
+[2024-06-18T16:09:04.426+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:09:04.426+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:09:06.322+0000] {processor.py:840} INFO - DAG(s) 'dag_elt_from_api_into_postgres' retrieved from /opt/airflow/dags/dag_for_project_weather_web_flask.py
+[2024-06-18T16:09:06.504+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:09:06.501+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T16:09:06.650+0000] {logging_mixin.py:188} INFO - [2024-06-18T16:09:06.649+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_elt_from_api_into_postgres to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-06-18T16:09:06.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_for_project_weather_web_flask.py took 2.288 seconds

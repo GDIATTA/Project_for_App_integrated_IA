@@ -3,13 +3,12 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from kafka import KafkaProducer, KafkaConsumer
-from confluent_kafka import SerializingProducer
 from datetime import datetime
 import random
 import json
 import time
 from kafka import KafkaConsumer
-#from airflow.providers.amazon.aws.hooks.s3 import S3Hook# from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+from airflow.providers.amazon.aws.hooks.s3 import S3Hook# from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 import logging
 
 default_args = {
@@ -48,6 +47,31 @@ def stream_data_from_Api_into_Kafka():
         except Exception as e:
             logging.error(f'An error occured: {e}')
             continue
+
+def stream_data_from_Kafka_into_S3_1(bucketname, sourcekey, destinationkey):
+
+ s3_hook = S3Hook(aws_conn_id='aws_conn')
+
+#Read data from Kafka3 
+ consumer = KafkaConsumer('users.items', bootstrap_servers='kafka1:29092')
+
+# Apply custom Transformation and then Load S3 file
+ for message in consumer:
+        comment = message.value.decode('utf-8')
+        s3_hook.load_string(comment, bucket_name=bucketname, Key=f'shopify.items/{message.offset}.csv')
+
+
+def stream_data_from_Kafka_into_S3_2(bucketname, sourcekey, destinationkey):
+
+ s3_hook = S3Hook(aws_conn_id='aws_conn')
+
+#Read data from Kafka3 
+ consumer = KafkaConsumer('shopify.items', bootstrap_servers='kafka3:29094')
+
+# Apply custom Transformation and then Load S3 file
+ for message in consumer:
+        comment = message.value.decode('utf-8')
+        s3_hook.load_string(comment, bucket_name=bucketname, Key=f'shopify.items/{message.offset}.csv')
 
 
 
