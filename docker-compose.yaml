@@ -35,7 +35,7 @@ services:
       SPARK_UI_PORT: 4040
       GRANT_SUDO: yes
     volumes:
-      - streaming_data:/data:rw
+      - C:\Users\Lenovo\OneDrive\Documents1\Projects\Project_Github\Project_for_App_integrated_IA\spark_streaming:/home/jovyan/
   
   zookeeper:
       image: confluentinc/cp-zookeeper:7.4.0

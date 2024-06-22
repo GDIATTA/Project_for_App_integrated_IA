@@ -3,6 +3,7 @@
   "config": {
     "connector.class": "com.mongodb.kafka.connect.MongoSourceConnector",
     "connection.uri": "mongodb://mongo1",
+    "publish.full.document.only": "true",
     "database": "shopify",
     "collection": "items"
   }

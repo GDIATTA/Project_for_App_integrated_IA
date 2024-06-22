@@ -20,7 +20,7 @@ default_args = {
 def fake_generate():
     return {
         "name":random.choice(['t-shirt','pantalon', 'chaussures','robe', 'jupe', 'chemise', 'short']),
-        "price":int(random.uniform(1,1000)),
+        "price":"(random.uniform(1,1000))",
         "category":random.choice(['vetement hiver', 'vetement été', 'vetement automne', 'vetement printent']),
         "instock":random.choice(["true","false"]),
         "tags":random.choice(['version1','version2','version3']),
@@ -40,7 +40,7 @@ def stream_data_from_Api_into_Kafka():
         try:
             res = fake_generate()
 
-            producer.send('items_shopify_posted', json.dumps(res).encode('utf-8'))
+            producer.send('shopify.items1', json.dumps(res).encode('utf-8'))
             #wait for 5 seconds before sending the next transaction
             time.sleep(2)
 
@@ -49,29 +49,53 @@ def stream_data_from_Api_into_Kafka():
             continue
 
 def stream_data_from_Kafka_into_S3_1(bucketname, sourcekey, destinationkey):
-
- s3_hook = S3Hook(aws_conn_id='aws_conn')
+    s3_hook = S3Hook(aws_conn_id='aws_conn')
 
 #Read data from Kafka3 
- consumer = KafkaConsumer('users.items', bootstrap_servers='kafka1:29092')
+    consumer = KafkaConsumer('shopify.items1',
+                           bootstrap_servers='kafka1:29092',
+                           auto_offset_reset='earliest',
+                           enable_auto_commit=False,
+                           group_id='console-consumer-36523',
+                           value_deserializer=lambda x: x.decode('utf-8')
+                          )
 
 # Apply custom Transformation and then Load S3 file
- for message in consumer:
-        comment = message.value.decode('utf-8')
-        s3_hook.load_string(comment, bucket_name=bucketname, Key=f'shopify.items/{message.offset}.csv')
+    curr_time = datetime.now()
+
+    while (datetime.now() - curr_time).seconds < 60:
+        try:
+            for message in consumer:
+                comment = message.value.decode('utf-8')
+                s3_hook.load_string(comment, bucket_name=bucketname, Key=f'shopify.items1/{message.offset}.csv')
+        except KeyboardInterrupt:
+            print("Stopping consumer...")
+    consumer.close()
 
 
 def stream_data_from_Kafka_into_S3_2(bucketname, sourcekey, destinationkey):
-
- s3_hook = S3Hook(aws_conn_id='aws_conn')
+    s3_hook = S3Hook(aws_conn_id='aws_conn')
 
 #Read data from Kafka3 
- consumer = KafkaConsumer('shopify.items', bootstrap_servers='kafka3:29094')
+    consumer = KafkaConsumer('shopify.items',
+                           bootstrap_servers='kafka3:29094'
+                           auto_offset_reset='earliest',
+                           enable_auto_commit=False,
+                           group_id='console-consumer-36523',
+                           value_deserializer=lambda x: x.decode('utf-8')
+                           )
 
 # Apply custom Transformation and then Load S3 file
- for message in consumer:
-        comment = message.value.decode('utf-8')
-        s3_hook.load_string(comment, bucket_name=bucketname, Key=f'shopify.items/{message.offset}.csv')
+    curr_time = datetime.now()
+
+    while (datetime.now() - curr_time).seconds < 60:
+        try:
+            for message in consumer:
+                comment = message.value.decode('utf-8')
+                s3_hook.load_string(comment, bucket_name=bucketname, Key=f'shopify.items1/{message.offset}.csv')
+        except KeyboardInterrupt:
+            print("Stopping consumer...")
+    consumer.close()
 
 
 
@@ -87,14 +111,14 @@ with DAG(
         python_callable=stream_data_from_Api_into_Kafka
     )
 
-    streaming_task
+    streaming_task_1 = PythonOperator(
+        task_id='stream_data_from_api_into_Kafka_S3',
+        python_callable=stream_data_from_Kafka_into_S3_1
+    )
 
-   # streaming_task_1 = PythonOperator(
-    #    task_id='stream_data_from_api_into_Kafka_S3',
-    #    python_callable=stream_data_from_Kafka_into_S3_1
-    #)
+    streaming_task_2 = PythonOperator(
+        task_id='stream_data_from_Mongo_into_Kafka_S3',
+        python_callable=stream_data_from_Kafka_into_S3_2
+    )
 
-   # streaming_task_2 = PythonOperator(
-    #    task_id='stream_data_from_Mongo_into_Kafka_S3',
-    #    python_callable=stream_data_from_Kafka_into_S3_2
-    #)
+    streaming_task >> streaming_task_1 >> streaming_task_2
