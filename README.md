@@ -12,11 +12,11 @@
 > • Ensure model integrity, testing, deployment, and security in CI/CD processes.<br>
 > • Integrate the AI model into the backend system.<br>
 
-> **Required Technical Skills :**<br>
->> ETL, CI/CD, AI, MLOps, Backend Development<br>
+ ## Required Technical Skills :
+> ETL, CI/CD, AI, MLOps, Backend Development<br>
 
-> **Storage Systems Needed :**<br>
->> Data Warehouse, Data Lake<br>
+## Storage Systems Needed :
+> Data Warehouse, Data Lake<br>
 
-> **Tools and Technologies :**<br>
->> Python, SQL, Apache Spark (Streaming), Kafka Connect and Kafka Streaming, MongoDB, PostgreSQL, Apache Airflow, AWS, Microsoft Azure, Power BI, GitHub Actions, DVC, Docker, Flask<br>
+## Tools and Technologies :
+> Python, SQL, Apache Spark (Streaming), Kafka Connect and Kafka Streaming, MongoDB, PostgreSQL, Apache Airflow, AWS, Microsoft Azure, Power BI, GitHub Actions, DVC, Docker, Flask<br>
