@@ -2,15 +2,14 @@
 
 ![Capture d’écran 2024-06-18 025048](https://github.com/GDIATTA/Project_for_-App_integrated_IA/assets/147615966/1b46be79-3a05-45ae-98c2-236363e3ad09)
 
-## Project Goals and Deliverables :
-Updated Project Goals
-1) Backend foundations (your current scope, improved) <br>
+## Project Goals :
+> 1) Backend foundations (your current scope, improved) <br>
 
-Build and maintain a backend to store product data (name, price, category, tags, description, image) in MongoDB.<br>
+>> Build and maintain a backend to store product data (name, price, category, tags, description, image) in MongoDB.<br>
 
-Ensure reliable image upload, storage, and retrieval with validation and safe file handling. <br>
+>> Ensure reliable image upload, storage, and retrieval with validation and safe file handling. <br>
 
-Standardize API responses and errors, and introduce input validation for form/API payloads. <br>
+>> Standardize API responses and errors, and introduce input validation for form/API payloads. <br>
 
 2) AI-ready data and feature storage <br>
 
