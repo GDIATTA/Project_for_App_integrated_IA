@@ -11,132 +11,132 @@
 
 >> Standardize API responses and errors, and introduce input validation for form/API payloads. <br>
 
-2) AI-ready data and feature storage <br>
+> 2) AI-ready data and feature storage <br>
 
-Enrich each product at ingestion time with AI features: <br>
+>> Enrich each product at ingestion time with AI features: <br>
 
-Text embedding from (name + description + tags + category) <br>
+>>> Text embedding from (name + description + tags + category) <br>
 
-Optional: extracted keywords, normalized category, metadata <br>
+>>> Optional: extracted keywords, normalized category, metadata <br>
 
-Store AI features in MongoDB (embedding, ai_tags, ai_category_confidence, etc.). <br>
+>>> Store AI features in MongoDB (embedding, ai_tags, ai_category_confidence, etc.). <br>
 
-3) AI capabilities integrated into the backend <br>
+> 3) AI capabilities integrated into the backend <br>
 
-Implement AI endpoints/services to support: <br>
+>> Implement AI endpoints/services to support: <br>
 
-Semantic search (“smart search” beyond keywords) <br>
+>>> Semantic search (“smart search” beyond keywords) <br>
 
-Similar products recommendations (kNN / cosine similarity over embeddings) <br>
+>>> Similar products recommendations (kNN / cosine similarity over embeddings) <br>
 
-Auto-tagging / category suggestion from description (optional) <br>
+>>> Auto-tagging / category suggestion from description (optional) <br>
 
-Integrate AI into the existing posting flow (/posting/) so that AI enrichment happens automatically after insert. <br>
+>>> Integrate AI into the existing posting flow (/posting/) so that AI enrichment happens automatically after insert. <br>
 
-4) Secure and scalable AI inference <br>
+> 4) Secure and scalable AI inference <br>
 
-Load AI models efficiently (single load at startup, caching). <br>
+>> Load AI models efficiently (single load at startup, caching). <br>
 
-Add security controls: <br>
+>> Add security controls: <br>
 
-file upload security (type/size checks) <br>
+>>> file upload security (type/size checks) <br>
 
-rate limiting / basic auth token (if exposed) <br>
+>>> rate limiting / basic auth token (if exposed) <br>
 
-sanitization and safe redirects <br>
+>>> sanitization and safe redirects <br>
 
-Prepare scalability path (vector index later: Atlas Vector Search / FAISS / pgvector). <br>
+>>> Prepare scalability path (vector index later: Atlas Vector Search / FAISS / pgvector). <br>
 
-5) AI workflow, testing, and CI/CD readiness <br>
+> 5) AI workflow, testing, and CI/CD readiness <br>
 
-Create a reproducible workflow for: <br>
+>> Create a reproducible workflow for: <br>
 
-model selection/versioning
+>>> model selection/versioning <br>
 
-evaluation of search quality (basic metrics)
+>>> evaluation of search quality (basic metrics) <br>
 
-regression tests for AI endpoints
+>>> regression tests for AI endpoints <br>
 
-Ensure CI/CD includes:
+>> Ensure CI/CD includes: <br>
 
-unit tests + integration tests
+>>> unit tests + integration tests <br>
 
-security checks
+>>> security checks <br>
 
-environment-based configuration
+>>> environment-based configuration <br>
 
-Updated Deliverables
-A) Refactored project structure (Blueprint-based)
+## Deliverables :
+> A) Refactored project structure (Blueprint-based) <br>
 
-Deliver a clean architecture:
+>> Deliver a clean architecture: <br> 
 
-routes/items.py for product routes
+>> routes/items.py for product routes <br>
 
-routes/ai.py for AI routes
+>> routes/ai.py for AI routes <br>
 
-services/ai/ for embedding + search logic
+>> services/ai/ for embedding + search logic <br>
 
-services/db.py for Mongo connection
+>> services/db.py for Mongo connection <br>
 
-B) AI Feature Implementation (Core)
+> B) AI Feature Implementation (Core) <br>
 
-Embedding generation
+>> Embedding generation <br>
 
-A module that generates an embedding for each product text
+>> A module that generates an embedding for each product text <br>
 
-Stored in MongoDB as embedding: [float, float, ...]
+>> Stored in MongoDB as embedding: [float, float, ...] <br>
 
-Semantic Search endpoint
+>> Semantic Search endpoint <br>
 
-GET /ai/search?q=... → returns top N most relevant items
+>> GET /ai/search?q=... → returns top N most relevant items <br>
 
-Similar Products endpoint
+>> Similar Products endpoint <br>
 
-GET /ai/similar/<item_id> → returns similar items
+>> GET /ai/similar/<item_id> → returns similar items <br>
 
-C) Optional AI Enhancements
+> C) Optional AI Enhancements <br>
 
-Auto category suggestion:
+>> Auto category suggestion: <br>
 
-POST /ai/suggest-category from description
+>>> POST /ai/suggest-category from description <br>
 
-Tag suggestion:
+>> Tag suggestion: <br>
 
-POST /ai/suggest-tags
+>>> POST /ai/suggest-tags <br>
 
-Content moderation for uploaded images (basic filtering)
+>>> Content moderation for uploaded images (basic filtering) <br>
 
-D) Quality, Security, and Performance
+> D) Quality, Security, and Performance <br>
 
-Validation layer for form fields
+>> Validation layer for form fields <br>
 
-Centralized error handling + logging
+>> Centralized error handling + logging <br>
 
-Performance optimizations:
+>> Performance optimizations: <br>
 
-model caching
+>>> model caching <br>
 
-limit returned fields
+>>> limit returned fields <br>
 
-avoid returning embeddings in responses
+>>> avoid returning embeddings in responses <br>
 
-E) Testing + Documentation
+> E) Testing + Documentation <br>
 
-Unit tests:
+>> Unit tests: <br>
 
-embedding generation
+>> embedding generation <br>
 
-cosine similarity ranking
+>> cosine similarity ranking <br>
 
-AI endpoints status + correctness
+>> AI endpoints status + correctness <br>
 
-Documentation:
+## Documentation:
 
-API endpoints (routes + payloads)
+> API endpoints (routes + payloads) <br>
 
-setup guide (env vars, run, docker)
+> setup guide (env vars, run, docker) <br>
 
-AI design note (how embeddings work, limitations)
+> AI design note (how embeddings work, limitations) <br>
 
  ## Required Technical Skills :
 > ETL, CI/CD, AI, MLOps, Backend Development<br>
