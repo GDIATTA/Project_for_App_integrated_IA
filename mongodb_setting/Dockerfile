@@ -19,7 +19,7 @@ RUN apt-get -y update
 RUN apt-get -y upgrade
 #RUN apt-get install -y --no-install-recommends apt-utilsdocker
 RUN apt-get install -y curl
-RUN apt-get install -y python3-pip
+RUN apt-get install -y python3-pip python3-venv
 RUN apt-get install -y nano
 RUN apt-get install -y bsdmainutils
 RUN apt-get install -y kafkacat
