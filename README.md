@@ -3,7 +3,7 @@
 ![Capture d’écran 2024-06-18 025048](https://github.com/GDIATTA/Project_for_-App_integrated_IA/assets/147615966/1b46be79-3a05-45ae-98c2-236363e3ad09)
 
 ## Project Goals :
-> 1) Backend foundations (your current scope, improved) <br>
+> **1) Backend foundations (your current scope, improved)** <br>
 
 >> Build and maintain a backend to store product data (name, price, category, tags, description, image) in MongoDB.<br>
 
@@ -11,7 +11,7 @@
 
 >> Standardize API responses and errors, and introduce input validation for form/API payloads. <br>
 
-> 2) AI-ready data and feature storage <br>
+> **2) AI-ready data and feature storage** <br>
 
 >> Enrich each product at ingestion time with AI features: <br>
 
@@ -21,7 +21,7 @@
 
 >>> Store AI features in MongoDB (embedding, ai_tags, ai_category_confidence, etc.). <br>
 
-> 3) AI capabilities integrated into the backend <br>
+> **3) AI capabilities integrated into the backend** <br>
 
 >> Implement AI endpoints/services to support: <br>
 
@@ -33,7 +33,7 @@
 
 >>> Integrate AI into the existing posting flow (/posting/) so that AI enrichment happens automatically after insert. <br>
 
-> 4) Secure and scalable AI inference <br>
+> **4) Secure and scalable AI inference** <br>
 
 >> Load AI models efficiently (single load at startup, caching). <br>
 
@@ -47,7 +47,7 @@
 
 >>> Prepare scalability path (vector index later: Atlas Vector Search / FAISS / pgvector). <br>
 
-> 5) AI workflow, testing, and CI/CD readiness <br>
+> **5) AI workflow, testing, and CI/CD readiness** <br>
 
 >> Create a reproducible workflow for: <br>
 
@@ -66,7 +66,7 @@
 >>> environment-based configuration <br>
 
 ## Deliverables :
-> A) Refactored project structure (Blueprint-based) <br>
+> **A) Refactored project structure (Blueprint-based)** <br>
 
 >> Deliver a clean architecture: <br> 
 
@@ -78,7 +78,7 @@
 
 >> services/db.py for Mongo connection <br>
 
-> B) AI Feature Implementation (Core) <br>
+> **B) AI Feature Implementation (Core)** <br>
 
 >> Embedding generation <br>
 
@@ -94,7 +94,7 @@
 
 >> GET /ai/similar/<item_id> → returns similar items <br>
 
-> C) Optional AI Enhancements <br>
+> **C) Optional AI Enhancements** <br>
 
 >> Auto category suggestion: <br>
 
@@ -106,7 +106,7 @@
 
 >>> Content moderation for uploaded images (basic filtering) <br>
 
-> D) Quality, Security, and Performance <br>
+> **D) Quality, Security, and Performance** <br>
 
 >> Validation layer for form fields <br>
 
@@ -120,7 +120,7 @@
 
 >>> avoid returning embeddings in responses <br>
 
-> E) Testing + Documentation <br>
+> **E) Testing + Documentation** <br>
 
 >> Unit tests: <br>
 
