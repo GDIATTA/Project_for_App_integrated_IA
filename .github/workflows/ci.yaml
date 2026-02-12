@@ -22,11 +22,11 @@ jobs:
 
       # 🔹 Build stack minimal
       - name: Build CI stack
-        run: docker compose -f docker-compose.ci.yml build
+        run: docker compose -f docker-compose.ci.yaml build
 
       # 🔹 Start services
       - name: Start CI stack
-        run: docker compose -f docker-compose.ci.yml up -d
+        run: docker compose -f docker-compose.ci.yaml up -d
 
       # 🔹 Attendre Flask
       - name: Wait for Flask
@@ -40,7 +40,7 @@ jobs:
             sleep 2
           done
           echo "Flask did not start"
-          docker compose -f docker-compose.ci.yml logs
+          docker compose -f docker-compose.ci.yaml logs
           exit 1
 
       # 🔹 Installer dépendances test
@@ -58,4 +58,4 @@ jobs:
       # 🔹 Stop stack
       - name: Shutdown
         if: always()
-        run: docker compose -f docker-compose.ci.yml down -v
+        run: docker compose -f docker-compose.ci.yaml down -v
