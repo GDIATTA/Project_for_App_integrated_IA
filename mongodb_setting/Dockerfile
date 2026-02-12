@@ -19,7 +19,7 @@ RUN apt-get -y update
 RUN apt-get -y upgrade
 #RUN apt-get install -y --no-install-recommends apt-utilsdocker
 RUN apt-get install -y curl
-RUN apt-get install -y python3-pip
+RUN apt-get install -y python3-pip python3-venv
 RUN apt-get install -y nano
 RUN apt-get install -y bsdmainutils
 RUN apt-get install -y kafkacat
@@ -30,5 +30,10 @@ RUN git clone https://github.com/RWaltersMA/stockgenmongo.git
 
 RUN dos2unix /usr/local/bin/*
 RUN dos2unix /data/db/.bashrc
-RUN pip3 install -r /requirements.txt
-RUN pip3 install -r /stockgenmongo/requirements.txt
+
+# --- venv pour éviter PEP 668 ---
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+RUN pip install --upgrade pip \
+ && pip install -r /requirements.txt \
+ && pip install -r /stockgenmongo/requirements.txt
