@@ -11,5 +11,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Installer les dépendances dans le venv
 COPY requirements.txt /requirements.txt
 RUN pip install --upgrade pip && pip install -r /requirements.txt
+
 CMD [ "python", "run.py" ]
 #COPY app.py /app

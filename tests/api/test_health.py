@@ -6,17 +6,17 @@ def wait_up(url, timeout=60):
     start = time.time()
     while time.time() - start < timeout:
         try:
-            r = requests.get(url, timeout=2)
+            r = requests.get(url, timeout=10)
             if r.status_code < 500:
                 return
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"WAIT_UP error:", repr(e))
         time.sleep(2)
     raise RuntimeError(f"API not ready: {url}")
 
 def test_api_is_up():
     wait_up(f"{BASE_URL}/")
-    r = requests.get(f"{BASE_URL}/")
+    r = requests.get(f"{BASE_URL}/", timeout=10)
     assert r.status_code in (200, 404)  # adapte selon tes routes
 
 # Si tu as /health, c’est encore mieux :
