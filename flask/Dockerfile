@@ -1,16 +1,12 @@
 FROM python:3.11
 WORKDIR /app
-COPY . /app/
+COPY requirements.txt .
 
-# Installer les dépendances système nécessaires
-RUN apt-get update && apt-get install -y python3-venv python3-pip
+RUN pip install --no-cache-dir -r requirements.txt \
+ && apt-get update && apt-get install -y --no-install-recommends curl \
+ && rm -rf /var/lib/apt/lists/*
 
-# Créer un venv
-RUN python3 -m venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
+COPY . .
+EXPOSE 5000
 
-# Installer les dépendances dans le venv
-COPY requirements.txt /requirements.txt
-RUN pip install --upgrade pip && pip install -r /requirements.txt
-
-CMD [ "python", "run.py" ]
+CMD ["gunicorn","-w","2","-b","0.0.0.0:5000","app:app"]

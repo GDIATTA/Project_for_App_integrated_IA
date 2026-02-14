@@ -286,9 +286,11 @@ services:
       PYTHONUNBUFFERED: "1"
       MONGO_HOST: mongo1
     restart: unless-stopped
-    read_only: true
-    tmpfs:
-      - /tmp
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:5000/health || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
 
   mongo1:
     build: mongodb_setting/.
