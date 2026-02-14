@@ -30,10 +30,5 @@ RUN git clone https://github.com/RWaltersMA/stockgenmongo.git
 
 RUN dos2unix /usr/local/bin/*
 RUN dos2unix /data/db/.bashrc
-
-# --- venv pour éviter PEP 668 ---
-RUN python3 -m venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
-RUN pip install --upgrade pip \
- && pip install -r /requirements.txt \
- && pip install -r /stockgenmongo/requirements.txt
+RUN pip3 install -r /requirements.txt
+RUN pip3 install -r /stockgenmongo/requirements.txt
