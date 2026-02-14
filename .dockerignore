@@ -1,0 +1,16 @@
+docker-compose*.yaml
+venv1
+tests/
+requirements-test.txt
+.git
+.github
+.gitignore
+settings.json
+LICENCE
+logs/
+airflow/
+dags/
+Connect_Mongo_and_Kafka/
+mongo_setting/
+app/flask/static/uploads/
+**/*.md

@@ -30,8 +30,7 @@ def allowed_file(filename):
 
 # MongoDB connection setup
 def get_db_connect():
-    client = MongoClient(host='mongo1',
-                          port=27017)
+    client = MongoClient(host=os.getenv("MONGO_HOST", "mongo"), port=27017)
     db = client.shopify
     current_collection = db.items
     return current_collection
@@ -97,6 +96,6 @@ def display_image(filename):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
 
 

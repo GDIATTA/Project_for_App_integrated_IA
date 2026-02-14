@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master", "main", "dev", "dev1" ]
+  pull_request:
+
+jobs:
+  flask-api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 🔹 Libérer de l’espace disque
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet || true
+          sudo rm -rf /opt/ghc || true
+          docker system prune -af || true
+
+      # 🔹 Build stack minimal
+      - name: Build CI stack
+        run: docker compose -f docker-compose.ci.yaml build
+
+      # 🔹 Start services
+      - name: Start CI stack
+        run: docker compose -f docker-compose.ci.yaml up -d
+
+      # 🔹 Attendre Flask
+      - name: Wait for Flask
+        run: |
+          for i in {1..30}; do
+            if curl -fs http://localhost:5000/ >/dev/null; then
+              echo "Flask is ready"
+              exit 0
+            fi
+            echo "Waiting for Flask..."
+            sleep 2
+          done
+          echo "Flask did not start"
+          docker compose -f docker-compose.ci.yaml logs
+          exit 1
+
+      # 🔹 Installer dépendances test
+      - name: Install test deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest requests
+
+      # 🔹 Lancer tests API
+      - name: Run API tests
+        env:
+          BASE_URL: http://localhost:5000
+        run: pytest -q
+
+      # 🔹 Stop stack
+      - name: Shutdown
+        if: always()
+        run: docker compose -f docker-compose.ci.yaml down -v
