@@ -12,3 +12,4 @@ pymongo==4.7.3
 pyScss==1.4.0
 six==1.16.0
 Werkzeug==3.0.3
+gunicorn==20.1.0

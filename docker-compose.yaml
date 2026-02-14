@@ -269,15 +269,26 @@ services:
 
   web:
     build: ./flask
-    command: python -u ./flask/app.py
+    command: >
+      gunicorn -w 4 -k gthread
+      --threads 8
+      --bind 0.0.0.0:5000
+      "app:app"
     ports:
       - "5000:5000"
     networks:
       - confluent
-    volumes:
-      - .:/app
-    links:
-      - mongo1
+    depends_on:
+    - mongo1
+    environment:
+      FLASK_ENV: production
+      FLASK_DEBUG: "0"
+      PYTHONUNBUFFERED: "1"
+      MONGO_HOST: mongo1
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
 
   mongo1:
     build: mongodb_setting/.
